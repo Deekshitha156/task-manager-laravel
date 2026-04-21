@@ -22,16 +22,16 @@ It is a single-user application with a clean and simple UI.
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home](screenshots/home.png)
+![Home](ScreenShots/home.png)
 
 ### ➕ Create Task
-![Create](screenshots/add_task.png)
+![Create](ScreenShots/add_task.png)
 
 ### 📋 View Tasks
-![View](screenshots/view_task.png)
+![View](ScreenShots/view_task.png)
 
 ### ✏️ Edit Task
-![Edit](screenshots/edit_task.png)
+![Edit](ScreenShots/edit_task.png)
 
 ---
 ## 🛠️ Technologies Used
@@ -103,7 +103,7 @@ http://127.0.0.1:8000/tasks
 ---
 
 ## 👩‍💻 Author
-**Deekshitha Poojary**
+   Deekshitha
 
 ---
 
