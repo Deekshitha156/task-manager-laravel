@@ -1,64 +1,96 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# 📝 Simple Task Management System
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## 📌 Project Description
+This is a Laravel-based Task Management System that allows users to manage their daily tasks efficiently.  
+Users can create, view, update, mark tasks as completed, and delete tasks.  
+It is a single-user application with a clean and simple UI.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Features
+- ➕ Add new tasks  
+- 📋 View all tasks  
+- ✏️ Edit task details  
+- ✅ Mark tasks as completed  
+- ❌ Delete tasks  
+- 🎯 Set task priority (Low, Medium, High)  
+- 📊 Track task status (Pending / Completed)  
+- 🎨 Clean UI using Bootstrap  
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🛠️ Technologies Used
+- **Backend:** PHP (Laravel Framework)  
+- **Frontend:** HTML, CSS, Bootstrap  
+- **Database:** MySQL  
+- **Tools:** Composer, Git, GitHub  
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## ⚙️ Setup Instructions
+Follow these steps to run the project locally:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 1. Clone the repository
+git clone https://github.com/Deekshitha156/task-manager-laravel.git
 
-## Laravel Sponsors
+### 2. Navigate to project folder
+cd task-manager-laravel
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### 3. Install dependencies
+composer install
 
-### Premium Partners
+### 4. Copy environment file
+cp .env.example .env
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+### 5. Generate application key
+php artisan key:generate
 
-## Contributing
+### 6. Configure database
+Open `.env` file and update:
+DB_DATABASE=task_manager
+DB_USERNAME=root
+DB_PASSWORD=
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 7. Run migrations
+php artisan migrate
 
-## Code of Conduct
+### 8. Start development server
+php artisan serve
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 9. Open in browser
+http://127.0.0.1:8000/tasks
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 🗄️ Database Information
+- Database is not included in the project  
+- Tables are created using Laravel migrations  
+- Run `php artisan migrate` to set up the database  
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 📁 Project Structure
+- `app/` → Controllers & Models  
+- `routes/` → Web routes  
+- `resources/views/` → Blade templates  
+- `database/migrations/` → Table structure  
+- `public/` → Public assets  
+
+---
+
+## 🎯 Key Concepts Used
+- MVC Architecture  
+- Laravel Resource Routing  
+- Form Validation  
+- Blade Templating  
+- Session Flash Messages  
+
+---
+
+## 👩‍💻 Author
+**Deekshitha Poojary**
+
+---
+
+## ⭐ Conclusion
+This project demonstrates a basic implementation of a Task Management System using Laravel, focusing on CRUD operations, clean UI, and proper MVC structure.
