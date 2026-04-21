@@ -42,8 +42,10 @@ class TaskController extends Controller
     {
         $task = Task::findOrFail($id);
 
-        // ✅ Handle Complete button
-        if ($request->has('status')) {
+        // ✅ Store old status
+        $oldStatus = $task->status;
+
+        if ($request->has('status') && !$request->has('title')) {
             $task->update([
                 'status' => $request->status
             ]);
@@ -62,7 +64,8 @@ class TaskController extends Controller
         $task->update([
             'title' => $request->title,
             'description' => $request->description,
-            'priority' => $request->priority
+            'priority' => $request->priority,
+            'status' => $request->status ?? $task->status // keep status if not changed
         ]);
 
         return redirect()->route('tasks.index')

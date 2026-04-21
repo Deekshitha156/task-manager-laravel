@@ -70,6 +70,7 @@
                         @csrf
                         @method('PUT')
                         <input type="hidden" name="status" value="Completed">
+                        <input type="hidden" name="complete_action" value="1">
                         <button class="btn btn-success btn-sm">Complete</button>
                     </form>
 

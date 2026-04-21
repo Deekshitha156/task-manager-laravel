@@ -19,6 +19,11 @@
             <input type="text" name="title" value="{{ $task->title }}" class="form-control" required>
         </div>
 
+        <div class="mb-3">
+            <label class="form-label">Description</label>
+            <textarea name="description" class="form-control" rows="3">{{ $task->description }}</textarea>
+        </div>
+
         <!-- Priority -->
         <div class="mb-3">
             <label class="form-label">Priority</label>
