@@ -19,6 +19,21 @@ It is a single-user application with a clean and simple UI.
 
 ---
 
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home](screenshots/home.png)
+
+### ➕ Create Task
+![Create](screenshots/add_task.png)
+
+### 📋 View Tasks
+![View](screenshots/view_task.png)
+
+### ✏️ Edit Task
+![Edit](screenshots/edit_task.png)
+
+---
 ## 🛠️ Technologies Used
 - **Backend:** PHP (Laravel Framework)  
 - **Frontend:** HTML, CSS, Bootstrap  
